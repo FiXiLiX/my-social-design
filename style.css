@@ -23,9 +23,12 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-#land-header {
+.bg-dark-transparent {
     background: #0e0b0b86;
     color: whitesmoke;
+}
+
+#land-header {
     padding: 2em 4em;
     letter-spacing: 0.1em;
     text-align: justify;
@@ -56,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #header-img {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
 }
 
@@ -74,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
     margin: 2em;
+}
+
+#people-say {
+    margin-top: -0.7em;
 }
 
 
@@ -171,12 +178,9 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-item {
         display: block;
     }
-    .half{
-        float: unset;
-        width:auto;
-        padding: 0.5em 0.5em;
-    }
+}
 
+@media(max-width: 740px){
     #land-header {
         display: block;
         padding: 1em 1em;
@@ -184,10 +188,11 @@ h1, h2, h3, h4, h5, h6 {
     #land-header > .half > ul {
         padding: 1em;
     }
-
-}
-
-@media(max-width: 740px){
+    .half{
+        float: unset;
+        width:auto;
+        padding: 0.5em 0.5em;
+    }
     .third {
         width: 100%;
     }
