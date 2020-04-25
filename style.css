@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    padding: 4em 1em;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-weight:100;
+  
+}
+
+#land-header {
+    background: #0e0b0b86;
+    color: whitesmoke;
+    padding: 0em 1em;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    display: flex;
+}
+
+.half{
+    float: left;
+    width:50%;
+    padding: 2em 1em;
+}
+
+.half > h1 {
+    margin: 0;
+}
+
+#header-img {
+    max-width: 300px;
+    width: 100%;
+}
+
+#btn-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border: none;
+    background: #0e0b0b86;
+    color: whitesmoke;
+    font-size: 2em;
+    padding: 0.2em 0.35em;
+    border-radius: 1em;
+    display: none;
+}
+
+.navbar {
+    background: #0e0b0b86;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-list {
+    margin: 0;
+    list-style: none;
+    padding: 1em;
+    float: right;
+}
+
+.navbar-non-transparent {
+    background: #0e0b0b;
+}
+
+.navbar-brand {
+    margin: 0;
+    list-style: none;
+    padding: 1em;
+    float: left;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar-item {
+    display: inline;
+    padding: 1em 0.5em 1em 0.5em;
+    cursor: pointer;
+}
+
+.navbar-item:hover{
+    border-bottom: white 1px solid;
+    padding-bottom: 0.95em;
+}
+
+.navbar-brand:hover{
+    border-bottom: white 1px solid;
+    padding-bottom: 0.95em;
+}
+
+.navbar-toggle:hover{
+    border-bottom: white 1px solid;
+    padding-bottom: 0.95em;
+}
+
+.navbar-link{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-toggle {
+    margin: 0;
+    list-style: none;
+    padding: 1em;
+    float: left;
+    color: whitesmoke;
+    text-decoration: none;
+    display: none;
+}
+
+@media(max-width: 480px){
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-list {
+        padding-top: 3em;
+        display: none;
+        float: unset;
+    }
+    .navbar-item {
+        display: block;
+    }
+    .half{
+        float: unset;
+        width:auto;
+        padding: 0.5em 0.5em;
+    }
+
+    #land-header {
+        display: block;
+    }
+
+}
+
+@media(min-width: 480px){
+    .navbar-list{
+        margin: 0;
+        padding: 1em;
+        float: right;
+        display: block !important;
+    }
+}
