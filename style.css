@@ -167,6 +167,7 @@ footer {
 
 footer > p > a{
     color: whitesmoke !important;
+    text-decoration: none;
 }
 
 .navbar-list {
